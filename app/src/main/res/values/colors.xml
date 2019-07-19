@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a65eb</color>
+    <color name="colorPrimaryLight">#7294e1</color>
+    <color name="colorPrimaryDark">#2658c9</color>
+    <color name="colorAccent">#e74c3c</color>
+
+    <color name="tabbar_text_color">#979797</color>
+    <color name="chat_bg">#ddd</color>
+    <color name="card_bg_color">#b1d2e6</color>
+    <color name="colorBackground">#DFD1D0</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".DoctorDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+
+        >
+
+
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Doctor's Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/profile_gap"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Name:"
+                    android:textStyle="bold" />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/dName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Specialist :"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/dSpecialist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spcialist" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Bio :"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/dBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bio" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Email :"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/dEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Mobile :"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/dMob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Age :"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/dAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Status :"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/dStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_gap"
+                android:orientation="horizontal"
+
+                >
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/profile_end_pad"
+                    android:text="Appointment Status :"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                    android:id="@+id/d_ap_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/chatDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/default_gap"
+                android:background="#169344"
+                android:padding="10dp"
+                android:text="Chat"
+                android:textColor="@color/white"
+
+                />
+
+
+            <Button
+                android:id="@+id/bookDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:text="Book Appointments"
+                android:textColor="@color/white"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

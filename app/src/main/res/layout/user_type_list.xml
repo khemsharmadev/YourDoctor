@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:minHeight="200dp"
+    android:minWidth="200dp"
+    android:padding="50dp"
+
+
+    >
+
+    <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient"
+        android:id="@+id/selPatient"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor"
+        android:id="@+id/selDoctor"
+
+        />
+</LinearLayout>

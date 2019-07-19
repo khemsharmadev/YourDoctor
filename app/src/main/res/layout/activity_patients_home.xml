@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PatientsHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_bg"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="22">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/mainGrid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                app:rowCount="3"
+                >
+
+                <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_chat" />
+
+                    <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All Chats"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_search" />
+
+                        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search Doctor"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_appointment" />
+
+                        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All Appointments"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_prescription" />
+
+                        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All Prescription"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_profile_image" />
+
+                        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Update Profile"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_logout" />
+
+                        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logout"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.gridlayout.widget.GridLayout>
+        </LinearLayout>
+
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient\nDashboard"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllPrescriptions"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    >
+
+    <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Prescription"
+        android:textStyle="italic"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/all_prescription_cycle"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

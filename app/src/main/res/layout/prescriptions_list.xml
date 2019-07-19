@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:elevation="@dimen/card_elevation"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_gap"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Prescription :"
+            android:id="@+id/prescription_number"
+            android:textSize="@dimen/appointment_text"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:src="@drawable/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+
+            />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+
+        >
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/prescription_file"
+            app:srcCompat="@color/colorPrimary"
+            android:layout_centerVertical="true"
+
+
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/prescription_file"
+            android:layout_centerVertical="true"
+            >
+            <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_text"
+                android:textAlignment="center"
+                android:id="@+id/prescription_issue_date"
+
+                android:textSize="@dimen/default_text"
+                android:padding="@dimen/default_chat_padding"
+                android:maxLength="28"
+                android:layout_marginStart="10dp"
+                />
+            <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_text"
+                android:textAlignment="center"
+                android:id="@+id/prescription_user_name"
+
+                android:textSize="@dimen/default_text"
+                android:padding="@dimen/default_chat_padding"
+                android:layout_marginStart="10dp"
+
+
+
+
+                />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prescription_note"
+
+
+
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

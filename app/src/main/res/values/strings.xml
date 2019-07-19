@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">YourDoctor</string>
+
+    <string name="login">Login</string>
+    <string name="not_user">Not a User ? Register Now</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register_now">Register Now</string>
+    <string name="register_as">Register as:</string>
+    <string name="address">Address</string>
+    <string name="email_id">Email ID</string>
+    <string name="dummy_text">Lorepum</string>
+    <string name="prescription_note">Note: Prescription is valid till 6 month after expire date.</string>
+
+    <string name="failed_token">Client Failed to retrieve token from server</string>
+    <string name="BraintreeFragment_initialized">BraintreeFragment is ready to use</string>
+    <string name="issues_with_authorization">There was an issue with your authorization string</string>
+    <string name="token_failed">Fail to retrieve client token </string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Type name…</string>
+</resources>

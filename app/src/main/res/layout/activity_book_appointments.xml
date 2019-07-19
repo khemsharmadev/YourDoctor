@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookAppointments"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+
+        >
+
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/default_gap"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_margin="@dimen/default_gap"
+
+
+            >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        >
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_date"
+        android:layout_marginTop="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT DATE"
+        android:id="@+id/btn_date"
+        android:layout_alignBottom="@+id/in_date"
+        android:layout_toRightOf="@+id/in_date"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/in_date" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_time"
+        android:layout_below="@+id/in_date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+
+
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT TIME"
+        android:id="@+id/btn_time"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignLeft="@+id/btn_date"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_alignStart="@+id/btn_date" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:id="@+id/aSub"
+        />
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Check Availability"
+       android:background="@color/colorPrimary"
+       android:padding="10dp"
+       android:textColor="@color/white"
+       android:id="@+id/aCheckBtn"
+       />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

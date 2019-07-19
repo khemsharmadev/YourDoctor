@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/all_chat_main_layout"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="8dp"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:padding="@dimen/default_gap"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/all_chat_profile_image"
+            app:srcCompat="@drawable/ic_profile_image"
+            />
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_text"
+            android:layout_toRightOf="@id/all_chat_profile_image"
+            android:textStyle="bold"
+            android:id="@+id/user_name"
+            android:padding="@dimen/default_chat_padding"
+            />
+
+
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_text"
+            android:layout_toRightOf="@id/all_chat_profile_image"
+            android:id="@+id/user_chat_message"
+            android:layout_below="@id/user_name"
+            android:padding="@dimen/default_chat_padding"
+
+            />
+
+        <com.khemsharma.yourdoctor.AppUttils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_text"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/last_chat_timestamp"
+            android:layout_below="@id/user_name"
+            android:padding="@dimen/default_chat_padding"
+            android:layout_centerVertical="true"
+
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
